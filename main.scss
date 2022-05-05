@@ -1,0 +1,64 @@
+$textcolor: #911414;
+$textcolor2: #5555ff;
+$textbordercolor: #ffffff;
+$textbordercolor2: #000000;
+$bgcolor: #00000055;
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    size: 100%;
+    background-image: url(pictures/berserk.jpg);
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.container {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 80%;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    color: $textcolor;
+    font-size: 50px;
+    -webkit-text-stroke: 2px $textbordercolor;     //textborder
+}
+
+section {
+    margin-top: 10%;
+    display: grid;
+    grid-gap: 25px;
+    color: $textcolor2;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+    -webkit-text-stroke: 1px $textbordercolor;
+}
+
+nav {
+    margin-top: 10%;
+    background-color: $bgcolor;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-content: center;
+}
+
+a {
+    color: $textbordercolor;
+    font-size: 40px;
+    -webkit-text-stroke: 1px $textbordercolor2;
+    text-decoration: none;
+}
+
+.choice {
+    border: 2px solid $textbordercolor;
+}
